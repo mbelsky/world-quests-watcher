@@ -10,6 +10,8 @@
     "src/*"
   ],
   "scripts": {
+    "bot": "yarn workspace di-bot run start",
+    "notify": "yarn workspace di-bot run notify",
     "scrap": "yarn workspace scraper run start",
     "test": "node --experimental-vm-modules node_modules/.bin/jest"
   }
