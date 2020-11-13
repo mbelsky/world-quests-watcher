@@ -1,0 +1,543 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parseHtml 1`] = `
+Object {
+  "data": Array [
+    Object {
+      "endsAt": "4 hours 1 minute",
+      "href": "/quest=42119",
+      "id": "42119",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=42859",
+      "id": "42859",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=43964",
+      "id": "43964",
+    },
+    Object {
+      "endsAt": "15 hours 1 minute",
+      "href": "/quest=46932",
+      "id": "46932",
+    },
+    Object {
+      "endsAt": "22 hours 1 minute",
+      "href": "/quest=41705",
+      "id": "41705",
+    },
+    Object {
+      "endsAt": "20 hours 1 minute",
+      "href": "/quest=47705",
+      "id": "47705",
+    },
+    Object {
+      "endsAt": "3 days 10 hours",
+      "href": "/quest=43642",
+      "id": "43642",
+    },
+    Object {
+      "endsAt": "16 hours 1 minute",
+      "href": "/quest=47561",
+      "id": "47561",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=41308",
+      "id": "41308",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=41209",
+      "id": "41209",
+    },
+    Object {
+      "endsAt": "22 hours 1 minute",
+      "href": "/quest=42151",
+      "id": "42151",
+    },
+    Object {
+      "endsAt": "4 hours 1 minute",
+      "href": "/quest=48509",
+      "id": "48509",
+    },
+    Object {
+      "endsAt": "22 hours 1 minute",
+      "href": "/quest=48510",
+      "id": "48510",
+    },
+    Object {
+      "endsAt": "1 hour 1 minute",
+      "href": "/quest=46168",
+      "id": "46168",
+    },
+    Object {
+      "endsAt": "20 hours 1 minute",
+      "href": "/quest=46821",
+      "id": "46821",
+    },
+    Object {
+      "endsAt": "15 hours 1 minute",
+      "href": "/quest=48286",
+      "id": "48286",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=44856",
+      "id": "44856",
+    },
+    Object {
+      "endsAt": "1 day 10 hours",
+      "href": "/quest=44189",
+      "id": "44189",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=42785",
+      "id": "42785",
+    },
+    Object {
+      "endsAt": "5 days 10 hours",
+      "href": "/quest=43798",
+      "id": "43798",
+    },
+    Object {
+      "endsAt": "2 days 10 hours",
+      "href": "/quest=42927",
+      "id": "42927",
+    },
+    Object {
+      "endsAt": "1 day 22 hours",
+      "href": "/quest=44893",
+      "id": "44893",
+    },
+    Object {
+      "endsAt": "16 hours 1 minute",
+      "href": "/quest=42276",
+      "id": "42276",
+    },
+    Object {
+      "endsAt": "1 day 4 hours",
+      "href": "/quest=43772",
+      "id": "43772",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=47720",
+      "id": "47720",
+    },
+    Object {
+      "endsAt": "16 hours 1 minute",
+      "href": "/quest=48722",
+      "id": "48722",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=46077",
+      "id": "46077",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=41560",
+      "id": "41560",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=41511",
+      "id": "41511",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=45934",
+      "id": "45934",
+    },
+    Object {
+      "endsAt": "4 hours 1 minute",
+      "href": "/quest=41014",
+      "id": "41014",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=48097",
+      "id": "48097",
+    },
+    Object {
+      "endsAt": "1 day 10 hours",
+      "href": "/quest=46139",
+      "id": "46139",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=44746",
+      "id": "44746",
+    },
+    Object {
+      "endsAt": "15 hours 1 minute",
+      "href": "/quest=48099",
+      "id": "48099",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=46111",
+      "id": "46111",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=44805",
+      "id": "44805",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=41944",
+      "id": "41944",
+    },
+    Object {
+      "endsAt": "5 hours 1 minute",
+      "href": "/quest=48386",
+      "id": "48386",
+    },
+    Object {
+      "endsAt": "4 hours 1 minute",
+      "href": "/quest=42150",
+      "id": "42150",
+    },
+    Object {
+      "endsAt": "1 hour 1 minute",
+      "href": "/quest=46167",
+      "id": "46167",
+    },
+    Object {
+      "endsAt": "2 days 16 hours",
+      "href": "/quest=43769",
+      "id": "43769",
+    },
+    Object {
+      "endsAt": "1 day 22 hours",
+      "href": "/quest=43764",
+      "id": "43764",
+    },
+    Object {
+      "endsAt": "22 hours 1 minute",
+      "href": "/quest=43583",
+      "id": "43583",
+    },
+    Object {
+      "endsAt": "4 hours 1 minute",
+      "href": "/quest=41602",
+      "id": "41602",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=44786",
+      "id": "44786",
+    },
+    Object {
+      "endsAt": "22 hours 1 minute",
+      "href": "/quest=47552",
+      "id": "47552",
+    },
+    Object {
+      "endsAt": "1 day 10 hours",
+      "href": "/quest=41865",
+      "id": "41865",
+    },
+    Object {
+      "endsAt": "22 hours 1 minute",
+      "href": "/quest=45792",
+      "id": "45792",
+    },
+    Object {
+      "endsAt": "4 hours 1 minute",
+      "href": "/quest=48735",
+      "id": "48735",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=49056",
+      "id": "49056",
+    },
+    Object {
+      "endsAt": "5 days 10 hours",
+      "href": "/quest=42819",
+      "id": "42819",
+    },
+    Object {
+      "endsAt": "16 hours 1 minute",
+      "href": "/quest=41964",
+      "id": "41964",
+    },
+    Object {
+      "endsAt": "16 hours 1 minute",
+      "href": "/quest=40850",
+      "id": "40850",
+    },
+    Object {
+      "endsAt": "22 hours 1 minute",
+      "href": "/quest=43324",
+      "id": "43324",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=46076",
+      "id": "46076",
+    },
+    Object {
+      "endsAt": "20 hours 1 minute",
+      "href": "/quest=41926",
+      "id": "41926",
+    },
+    Object {
+      "endsAt": "15 hours 1 minute",
+      "href": "/quest=42176",
+      "id": "42176",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=48833",
+      "id": "48833",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=48526",
+      "id": "48526",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=43709",
+      "id": "43709",
+    },
+    Object {
+      "endsAt": "5 days 10 hours",
+      "href": "/quest=48959",
+      "id": "48959",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=44815",
+      "id": "44815",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=47542",
+      "id": "47542",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=41549",
+      "id": "41549",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=48514",
+      "id": "48514",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=44892",
+      "id": "44892",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=41343",
+      "id": "41343",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=48338",
+      "id": "48338",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=48374",
+      "id": "48374",
+    },
+    Object {
+      "endsAt": "16 hours 1 minute",
+      "href": "/quest=48192",
+      "id": "48192",
+    },
+    Object {
+      "endsAt": "1 hour 1 minute",
+      "href": "/quest=46170",
+      "id": "46170",
+    },
+    Object {
+      "endsAt": "1 day 10 hours",
+      "href": "/quest=43637",
+      "id": "43637",
+    },
+    Object {
+      "endsAt": "1 hour 1 minute",
+      "href": "/quest=46146",
+      "id": "46146",
+    },
+    Object {
+      "endsAt": "5 hours 1 minute",
+      "href": "/quest=45035",
+      "id": "45035",
+    },
+    Object {
+      "endsAt": "20 hours 1 minute",
+      "href": "/quest=47712",
+      "id": "47712",
+    },
+    Object {
+      "endsAt": "2 days 10 hours",
+      "href": "/quest=42170",
+      "id": "42170",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=43755",
+      "id": "43755",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=42082",
+      "id": "42082",
+    },
+    Object {
+      "endsAt": "1 hour 1 minute",
+      "href": "/quest=45134",
+      "id": "45134",
+    },
+    Object {
+      "endsAt": "1 day 10 hours",
+      "href": "/quest=42234",
+      "id": "42234",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=42422",
+      "id": "42422",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=40280",
+      "id": "40280",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=42159",
+      "id": "42159",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=45379",
+      "id": "45379",
+    },
+    Object {
+      "endsAt": "5 hours 1 minute",
+      "href": "/quest=41930",
+      "id": "41930",
+    },
+    Object {
+      "endsAt": "4 hours 1 minute",
+      "href": "/quest=48465",
+      "id": "48465",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=44289",
+      "id": "44289",
+    },
+    Object {
+      "endsAt": "4 hours 1 minute",
+      "href": "/quest=43622",
+      "id": "43622",
+    },
+    Object {
+      "endsAt": "16 hours 1 minute",
+      "href": "/quest=43611",
+      "id": "43611",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=44023",
+      "id": "44023",
+    },
+    Object {
+      "endsAt": "22 hours 1 minute",
+      "href": "/quest=43451",
+      "id": "43451",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=43599",
+      "id": "43599",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=41257",
+      "id": "41257",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=43248",
+      "id": "43248",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=41420",
+      "id": "41420",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=42070",
+      "id": "42070",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=43600",
+      "id": "43600",
+    },
+    Object {
+      "endsAt": "1 hour 1 minute",
+      "href": "/quest=46263",
+      "id": "46263",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=43943",
+      "id": "43943",
+    },
+    Object {
+      "endsAt": "22 hours 1 minute",
+      "href": "/quest=41677",
+      "id": "41677",
+    },
+    Object {
+      "endsAt": "16 hours 1 minute",
+      "href": "/quest=41676",
+      "id": "41676",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=41647",
+      "id": "41647",
+    },
+    Object {
+      "endsAt": "4 hours 1 minute",
+      "href": "/quest=41660",
+      "id": "41660",
+    },
+    Object {
+      "endsAt": "22 hours 1 minute",
+      "href": "/quest=48696",
+      "id": "48696",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=48829",
+      "id": "48829",
+    },
+    Object {
+      "endsAt": "10 hours 1 minute",
+      "href": "/quest=48738",
+      "id": "48738",
+    },
+  ],
+}
+`;

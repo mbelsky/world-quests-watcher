@@ -1,0 +1,15 @@
+{
+  "name": "scraper",
+  "version": "0.1.0",
+  "main": "scraper.js",
+  "author": "Max Belsky <public.belsky@gmail.com>",
+  "license": "GNU GPLv3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "playwright": "^1.5.2"
+  }
+}

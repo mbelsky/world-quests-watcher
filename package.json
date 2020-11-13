@@ -1,0 +1,16 @@
+{
+  "name": "active-world-quests",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Max Belsky <public.belsky@gmail.com>",
+  "license": "GNU GPLv3",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "src/*"
+  ],
+  "scripts": {
+    "scrap": "yarn workspace scraper run start",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  }
+}
