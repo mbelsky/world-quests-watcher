@@ -1,7 +1,6 @@
-const urlTemplate = `https://www.wowhead.com/world-quests/{addon}/{region}`;
+import { addons, regions } from "wqw-common/const.js";
 
-const addons = ["legion", "bfa"];
-const regions = ["eu", "na"];
+const urlTemplate = `https://www.wowhead.com/world-quests/{addon}/{region}`;
 
 export async function scrapWorldQuests(scrapFn) {
   const htmlMap = {};

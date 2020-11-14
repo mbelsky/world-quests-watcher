@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`makeActiveQuestsMessage 1`] = `
+"Today active quests:
+
+— \\"Flummoxed\\" https://www.wowhead.com/quest=40337
+— \\"Prisoners of Greystone\\" https://www.wowhead.com/quest=40850"
+`;

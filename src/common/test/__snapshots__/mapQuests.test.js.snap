@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mapQuestsByRegion 1`] = `
+Object {
+  "eu": Object {
+    "52989": Object {
+      "endsAt": "11 hours",
+      "href": "/quest=52989",
+      "id": "52989",
+      "region": "eu",
+    },
+    "62981": Object {
+      "endsAt": "11 hours",
+      "href": "/quest=62981",
+      "id": "62981",
+      "region": "eu",
+    },
+    "62989": Object {
+      "endsAt": "11 hours",
+      "href": "/quest=62989",
+      "id": "62989",
+      "region": "eu",
+    },
+  },
+  "na": Object {
+    "52981": Object {
+      "endsAt": "11 hours",
+      "href": "/quest=52981",
+      "id": "52981",
+      "region": "na",
+    },
+    "52986": Object {
+      "endsAt": "11 hours",
+      "href": "/quest=52986",
+      "id": "52986",
+      "region": "na",
+    },
+    "52989": Object {
+      "endsAt": "11 hours",
+      "href": "/quest=52989",
+      "id": "52989",
+      "region": "na",
+    },
+    "62989": Object {
+      "endsAt": "11 hours",
+      "href": "/quest=62989",
+      "id": "62989",
+      "region": "na",
+    },
+  },
+}
+`;

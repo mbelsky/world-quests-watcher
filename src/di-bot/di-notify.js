@@ -1,19 +1,41 @@
 import Discord from "discord.js";
+import { makeActiveQuestsMessage } from "wqw-common/makeActiveQuestsMessage.js";
+import { mapQuestsByRegion } from "wqw-common/mapQuests.js";
 
 async function onReady({ client, quests, users }) {
-  async function sendHi(userId) {
-    const user = new Discord.User(client, { id: userId });
+  async function notifyUser(id, message) {
+    const user = new Discord.User(client, { id });
 
     try {
       const dm = await user.createDM();
-      await dm.send("hi!");
+      await dm.send(message);
     } catch (e) {
       console.error(e);
     }
   }
 
-  for await (const user of users) {
-    await sendHi(user.id);
+  const questsMap = mapQuestsByRegion(quests);
+
+  for (const user of users) {
+    const { id, region, subscriptions = [] } = user;
+
+    if (!region || subscriptions.length === 0) {
+      continue;
+    }
+
+    const regionQuestsMap = questsMap[region] || {};
+
+    const userActiveQuests = subscriptions
+      .map((questId) => {
+        return regionQuestsMap[questId];
+      })
+      .filter(Boolean);
+
+    const message = makeActiveQuestsMessage(userActiveQuests);
+
+    if (message) {
+      await notifyUser(id, message);
+    }
   }
 }
 
@@ -27,7 +49,7 @@ export function notify({ quests, users }) {
 
         client.destroy();
 
-        resolve()
+        resolve();
       })
       .login(process.env.DI_BOT_TOKEN);
   });
