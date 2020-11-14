@@ -35,7 +35,7 @@ export class QuestsManager {
 
     const batch = this.#db.batch();
 
-    quests.docs.forEach(({ doc }) => batch.delete(doc));
+    quests.docs.forEach((doc) => batch.delete(doc.ref));
 
     await batch.commit();
   };

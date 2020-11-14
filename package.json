@@ -1,5 +1,5 @@
 {
-  "name": "active-world-quests",
+  "name": "world-quests-watcher",
   "version": "0.1.0",
   "main": "index.js",
   "author": "Max Belsky <public.belsky@gmail.com>",
@@ -12,7 +12,7 @@
   "scripts": {
     "bot": "yarn workspace di-bot run start",
     "notify": "yarn workspace di-bot run notify",
-    "scrap": "yarn workspace scraper run start",
+    "worker": "yarn workspace worker start",
     "test": "node --experimental-vm-modules node_modules/.bin/jest"
   }
 }

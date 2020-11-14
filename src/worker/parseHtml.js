@@ -43,11 +43,13 @@ export function parseHtml(html) {
       throw new Error(`Invalid dataList.length=${dataList.length}`);
     }
 
-    const href = dataList.find("a").attr("href");
+    const questAnchor = dataList.eq(0).find("a");
+    const href = questAnchor.attr("href");
+    const name = questAnchor.text().replace(/\s+/g, " ");
     const endsAt = dataList.eq(3).find("div").text().trim();
-    const id = href.split('=')[1]
+    const [__, id] = href.split("=");
 
-    return { endsAt, href, id };
+    return { endsAt, href, id, name };
   }
 
   try {
@@ -61,4 +63,34 @@ export function parseHtml(html) {
       error: new Error(e.message + ". html: " + html),
     };
   }
+}
+
+export function parseHtmlMap(htmlMap) {
+  const questsMap = {};
+
+  Object.entries(htmlMap).forEach(([key, html]) => {
+    const [region] = key.split("-");
+
+    const { data, error } = parseHtml(html);
+
+    if (error) {
+      // 😭
+      throw error;
+    }
+
+    const quests = data.map((quest) => {
+      return {
+        ...quest,
+        region,
+      };
+    });
+
+    if (region in questsMap) {
+      questsMap[region].push(...quests);
+    } else {
+      questsMap[region] = quests;
+    }
+  });
+
+  return questsMap;
 }

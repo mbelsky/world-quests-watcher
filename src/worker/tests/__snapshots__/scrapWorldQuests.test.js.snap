@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`html mapper 1`] = `
+Object {
+  "eu-bfa": "https://www.wowhead.com/world-quests/bfa/eu",
+  "eu-legion": "https://www.wowhead.com/world-quests/legion/eu",
+  "na-bfa": "https://www.wowhead.com/world-quests/bfa/na",
+  "na-legion": "https://www.wowhead.com/world-quests/legion/na",
+}
+`;

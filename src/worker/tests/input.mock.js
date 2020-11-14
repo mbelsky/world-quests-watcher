@@ -2387,4 +2387,165 @@ export const html = `
       data-active="no">Last »</a></div>
   <div class="listview-note">&nbsp;</div>
 </div>
+`.trim();
+
+const microHtml = `
+<div class="listview-band-top">
+  <div class="listview-nav listview-nav-nocontrols"><a
+      class="listview-reset-sort fa fa-times-circle" href="javascript:"
+      style="display: none;">Reset Sort</a><a href="javascript:"
+      data-active="no">« First</a><a href="javascript:" data-active="no">‹
+      Previous</a><span><b>1</b> - <b>4</b> of <b>4</b></span><a
+      href="javascript:" data-active="no">Next ›</a><a href="javascript:"
+      data-active="no">Last »</a></div><a href="javascript:"
+    class="listview-filters-link fa fa-filter"></a>
+  <div class="listview-note">&nbsp;</div>
+</div>
+<div class="listview-scroller-horizontal">
+  <div class="listview-scroller-vertical">
+    <table class="listview-mode-default">
+      <thead>
+        <tr>
+          <th style="text-align: left;">
+            <div><a href="javascript:"><span
+                  class="listview-sort-asc"><span>Name</span></span></a></div>
+          </th>
+          <th style="text-align: left;">
+            <div><a href="javascript:"><span><span>Rewards</span></span></a>
+            </div>
+          </th>
+          <th style="text-align: left;">
+            <div><a href="javascript:"><span><span>Faction</span></span></a>
+            </div>
+          </th>
+          <th style="text-align: left;">
+            <div><a href="javascript:"><span><span>Ends at...</span></span></a>
+            </div>
+          </th>
+          <th style="text-align: left;">
+            <div><a href="javascript:"><span><span>Zone</span></span></a></div>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="clickable">
+        <tr class="listview-row">
+          <td style="text-align: left;">
+            <div><a class="listview-cleartext" href="/quest=52986">A Wicked
+                Vessel</a></div>
+          </td>
+          <td style="text-align: left;">
+            <div></div>
+          </td>
+          <td style="text-align: left;">
+            <div><a href="/faction=2162">Storm's Wake</a><br><a
+                href="/faction=2157">The Honorbound</a></div>
+          </td>
+          <td style="text-align: left;">
+            <div>11 hours 54 minutes </div>
+          </td>
+          <td style="text-align: left;">
+            <div><a href="/zone=9042">Stormsong Valley</a></div>
+          </td>
+        </tr>
+        <tr class="listview-row">
+          <td style="text-align: left;">
+            <div><a class="listview-cleartext" href="/quest=57157">Assault: The
+                Black Empire</a></div>
+          </td>
+          <td style="text-align: left;">
+            <div><a href="/item=173372" class="q3 icontiny" data-entity="item"
+                data-entity-has-icon="true"><img
+                  src="https://wow.zamimg.com/images/wow/icons/tiny/inv_legion_cache_nightmare.gif"
+                  align="absmiddle"> <span class="tinyicontxt">Cache of the
+                  Black Empire</span></a></div>
+          </td>
+          <td style="text-align: left;">
+            <div><a href="/faction=2417">Uldum Accord</a></div>
+          </td>
+          <td style="text-align: left;">
+            <div>4 days 11 hours </div>
+          </td>
+          <td style="text-align: left;">
+            <div><a href="/zone=10833">Uldum</a></div>
+          </td>
+        </tr>
+        <tr class="listview-row">
+          <td style="text-align: left;">
+            <div><a class="listview-cleartext" href="/quest=50296">Billy Goat
+                Barber</a></div>
+          </td>
+          <td style="text-align: left;">
+            <div><a href="/item=157968" class="q3 icontiny" data-entity="item"
+                data-entity-has-icon="true"><img
+                  src="https://wow.zamimg.com/images/wow/icons/tiny/inv_glove_cloth_kultirasquest_b_01.gif"
+                  align="absmiddle"> <span class="tinyicontxt">Sirensong
+                  Handwraps</span></a><br><a href="/item=157976"
+                class="q3 icontiny" data-entity="item"
+                data-entity-has-icon="true"><img
+                  src="https://wow.zamimg.com/images/wow/icons/tiny/inv_glove_leather_kultirasquest_b_01.gif"
+                  align="absmiddle"> <span class="tinyicontxt">Seafarer
+                  Grips</span></a><br><a href="/item=157984" class="q3 icontiny"
+                data-entity="item" data-entity-has-icon="true"><img
+                  src="https://wow.zamimg.com/images/wow/icons/tiny/inv_glove_mail_kultirasquest_b_01.gif"
+                  align="absmiddle"> <span class="tinyicontxt">Crosswind
+                  Handguards</span></a><br><a href="/item=157992"
+                class="q3 icontiny" data-entity="item"
+                data-entity-has-icon="true"><img
+                  src="https://wow.zamimg.com/images/wow/icons/tiny/inv_glove_plate_kultirasquest_b_01.gif"
+                  align="absmiddle"> <span class="tinyicontxt">Harbormaster
+                  Gauntlets</span></a></div>
+          </td>
+          <td style="text-align: left;">
+            <div><a href="/faction=2160">Proudmoore Admiralty</a><br><a
+                href="/faction=2157">The Honorbound</a></div>
+          </td>
+          <td style="text-align: left;">
+            <div>19 hours 54 minutes </div>
+          </td>
+          <td style="text-align: left;">
+            <div><a href="/zone=8567">Tiragarde Sound</a></div>
+          </td>
+        </tr>
+        <tr class="listview-row">
+          <td style="text-align: left;">
+            <div><a class="listview-cleartext" href="/quest=58747">Brain
+                Tickling</a></div>
+          </td>
+          <td style="text-align: left;">
+            <div>5 <a href="/item=116421" class="q1 icontiny" data-entity="item"
+                data-entity-has-icon="true"><img
+                  src="https://wow.zamimg.com/images/wow/icons/tiny/icon_upgradestone_flying_legendary.gif"
+                  align="absmiddle"> <span class="tinyicontxt">Flying
+                  Battle-Training Stone</span></a></div>
+          </td>
+          <td style="text-align: left;">
+            <div><a href="/faction=2415">Rajani</a></div>
+          </td>
+          <td style="text-align: left;">
+            <div>11 hours 54 minutes </div>
+          </td>
+          <td style="text-align: left;">
+            <div><a href="/zone=9105">Vale of Eternal Blossoms</a></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="listview-nodata text" style="display: none;"></div>
+  </div>
+</div>
+<div class="listview-band-bottom" style="width: 1220px;">
+  <div class="listview-nav listview-nav-nocontrols"><a href="javascript:"
+      data-active="no">« First</a><a href="javascript:" data-active="no">‹
+      Previous</a><span><b>1</b> - <b>4</b> of <b>4</b></span><a
+      href="javascript:" data-active="no">Next ›</a><a href="javascript:"
+      data-active="no">Last »</a></div>
+  <div class="listview-note">&nbsp;</div>
+</div>
 `.trim()
+
+export const htmlMap = {
+  "eu-bfa": microHtml,
+  "eu-legion": microHtml,
+  "na-bfa": microHtml,
+  "na-legion": microHtml,
+};
