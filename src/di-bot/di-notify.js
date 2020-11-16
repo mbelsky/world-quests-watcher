@@ -1,6 +1,7 @@
 import Discord from "discord.js";
 import { makeActiveQuestsMessage } from "wqw-common/makeActiveQuestsMessage.js";
 import { mapQuestsByRegion } from "wqw-common/mapQuests.js";
+import { Alerter } from "wqw-monitoring/alerter.js";
 
 async function onReady({ client, quests, users }) {
   async function notifyUser(id, message) {
@@ -10,7 +11,7 @@ async function onReady({ client, quests, users }) {
       const dm = await user.createDM();
       await dm.send(message);
     } catch (e) {
-      console.error(e);
+      Alerter.error("Failed to notify a user", e, { id });
     }
   }
 

@@ -2,6 +2,7 @@ import { db } from "wqw-common/firestore.js";
 import { QuestsManager } from "wqw-common/QuestsManager.js";
 import { UsersManager } from "wqw-common/UsersManager.js";
 import { notify } from "wqw-di-bot/di-notify.js";
+import { Alerter } from "wqw-monitoring/alerter.js";
 import { parseHtmlMap } from "./parseHtml.js";
 import { questsMapToList } from "./questsMapToList.js";
 import { launchChromium, scrap } from "./scraper.js";
@@ -15,8 +16,7 @@ async function getHtml() {
   try {
     await browser.close();
   } catch (e) {
-    console.error(e);
-    // TODO: send report but don't fail
+    Alerter.error("Failed to close browser", e);
   }
 
   return htmlMap;
@@ -27,8 +27,8 @@ function htmlToList(htmlMap) {
     const questsMap = parseHtmlMap(htmlMap);
     return questsMapToList(questsMap);
   } catch (e) {
-    // TODO: Send report
-    console.error(e, htmlMap);
+    Alerter.error("Failed map html to quests", e, { htmlMap });
+
     return [];
   }
 }
@@ -46,16 +46,14 @@ async function doYourJob() {
   const quests = htmlToList(htmlMap);
 
   if (quests.length === 0) {
-    // TODO: send warn
-    console.warn(`quest list is empty`);
+    Alerter.warn(`quest list is empty`, { htmlMap });
     return;
   }
 
   try {
     await questsManager.create(quests);
   } catch (e) {
-    console.error(e, quests);
-    // TODO: send report but don't fail
+    Alerter.warn("Failed to create quests", e, { quests });
   }
 
   const users = await getUsers();

@@ -1,0 +1,11 @@
+{
+  "name": "wqw-monitoring",
+  "version": "0.1.0",
+  "author": "Max Belsky <public.belsky@gmail.com>",
+  "license": "GNU GPLv3",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "rollbar": "^2.19.4"
+  }
+}
