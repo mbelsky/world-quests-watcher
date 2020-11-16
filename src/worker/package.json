@@ -10,7 +10,7 @@
     "start": "node -r dotenv/config ."
   },
   "dependencies": {
-    "cheerio": "git://github.com/cheeriojs/cheerio.git#447995543a000e46396eb8b67c27e8b5e838b7e9",
+    "cheerio": "1.0.0-rc.3",
     "jest": "^26.6.3",
     "playwright": "^1.6.1"
   },
