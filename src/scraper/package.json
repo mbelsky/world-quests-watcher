@@ -1,0 +1,8 @@
+{
+  "name": "wqw-scraper",
+  "version": "0.1.0",
+  "author": "Max Belsky <public.belsky@gmail.com>",
+  "license": "GNU GPLv3",
+  "private": true,
+  "type": "module"
+}

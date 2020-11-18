@@ -22,3 +22,7 @@ bot:
 .PHONY: cron
 cron:
 		docker run --name=wqw-cron $(COMMON_RUN_ARGS) --env CRON=true -d --restart on-failure:3 $(IMG)
+
+.PHONY: scraper
+scraper:
+		docker run -it --rm --env-file ./.env --env FIREBASE_CONFIG=/data/cert.json --mount type=bind,src=$(ROOT_DIR)/cert.json,dst=/data/cert.json,ro --ipc=host --security-opt seccomp=seccomp_profile.json wtf:latest
