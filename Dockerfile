@@ -18,12 +18,12 @@ WORKDIR /app
 
 COPY --from=deps /app .
 
-RUN yarn install --frozen-lockfile --production=true
+RUN yarn install --frozen-lockfile --production=true --ignore-optional
 
 COPY . .
 
 # To restore workspaces symlinks
-RUN yarn install --frozen-lockfile --production=true && \
+RUN yarn install --frozen-lockfile --production=true --ignore-optional && \
     chmod -R 755 scripts src && \
     cat crond/crontab >> /var/spool/cron/crontabs/root
 

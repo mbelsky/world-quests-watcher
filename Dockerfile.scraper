@@ -1,0 +1,61 @@
+FROM ubuntu:bionic
+
+# 1. Install node12
+RUN apt-get update && apt-get install -y curl && \
+    curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
+    apt-get install -y nodejs
+
+# 2. Install WebKit dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libwoff1 \
+    libopus0 \
+    libwebp6 \
+    libwebpdemux2 \
+    libenchant1c2a \
+    libgudev-1.0-0 \
+    libsecret-1-0 \
+    libhyphen0 \
+    libgdk-pixbuf2.0-0 \
+    libegl1 \
+    libnotify4 \
+    libxslt1.1 \
+    libevent-2.1-6 \
+    libgles2 \
+    libvpx5 \
+    libxcomposite1 \
+    libatk1.0-0 \
+    libatk-bridge2.0-0 \
+    libepoxy0 \
+    libgtk-3-0 \
+    libharfbuzz-icu0
+
+# 4. Install Chromium dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libnss3 \
+    libxss1 \
+    libasound2 \
+    fonts-noto-color-emoji \
+    libxtst6
+
+# 8. Feature-parity with node.js base images.
+RUN apt-get update && apt-get install -y --no-install-recommends git ssh && \
+    npm i -g yarn
+
+# Steps above copied from https://github.com/microsoft/playwright/blob/95aab3b29ddc297730d1b3fd1b5fa466d85629d2/docs/docker/Dockerfile.bionic
+
+ENV NODE_ENV production
+
+WORKDIR /app
+
+COPY . .
+
+RUN addgroup --gid 1007 wqw-scraper \
+  && adduser -u 1001 --gid 1007 --gecos '' --disabled-password --shell /bin/sh wqw-scraper \
+  && chown -R wqw-scraper:wqw-scraper . \
+  && chmod -R 755 scripts src
+
+USER wqw-scraper
+
+RUN yarn install --frozen-lockfile --production=true
+
+CMD ["node", "src/scraper/scraper.js"]

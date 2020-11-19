@@ -1,8 +1,8 @@
-name: Publish Docker image
+name: Publish Scraper Docker image
 on:
   push:
     tags:
-      - wqw-*
+      - scraper-*
 
 jobs:
   main:
@@ -25,5 +25,6 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
+          file: ./Dockerfile.scraper
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/wqw:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/wqw-scraper:latest

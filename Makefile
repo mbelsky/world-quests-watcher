@@ -2,6 +2,7 @@ ROOT_DIR:=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 COMMON_RUN_ARGS:=-it --env-file ./.env --env FIREBASE_CONFIG=/data/cert.json --mount type=bind,src=$(ROOT_DIR)/cert.json,dst=/data/cert.json,ro
 IMGV?=latest
 IMG:=mbelsky/wqw:$(IMGV)
+IMGSCRPR:=mbelsky/wqw-scraper:$(IMGV)
 
 .PHONY: build
 build:
@@ -22,3 +23,8 @@ bot:
 .PHONY: cron
 cron:
 		docker run --name=wqw-cron $(COMMON_RUN_ARGS) --env CRON=true -d --restart on-failure:3 $(IMG)
+
+.PHONY: scraper-dev
+scraper-dev:
+		docker build -f Dockerfile.scraper -t wtf . \
+		&& docker run $(COMMON_RUN_ARGS) --ipc=host --security-opt seccomp=seccomp_profile.json $(IMGSCRPR) sh
