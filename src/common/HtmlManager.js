@@ -33,4 +33,18 @@ export class HtmlManager {
 
     await batch.commit();
   };
+
+  get = async () => {
+    const listRef = this.#db.collection(HTML_COLLECTION);
+
+    const snapshot = await listRef.get();
+
+    return snapshot.docs
+      .map((doc) => doc.data())
+      .reduce((map, html) => {
+        map[html.key] = html.value;
+
+        return map;
+      }, {});
+  };
 }

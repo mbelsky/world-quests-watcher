@@ -1,25 +1,16 @@
 import { db } from "wqw-common/firestore.js";
+import { HtmlManager } from "wqw-common/HtmlManager.js";
 import { QuestsManager } from "wqw-common/QuestsManager.js";
 import { UsersManager } from "wqw-common/UsersManager.js";
 import { notify } from "wqw-di-bot/di-notify.js";
 import { Alerter } from "wqw-monitoring/alerter.js";
 import { parseHtmlMap } from "./parseHtml.js";
 import { questsMapToList } from "./questsMapToList.js";
-import { launchChromium, scrap } from "./scraper.js";
-import { scrapWorldQuests } from "./scrapWorldQuests.js";
 
 async function getHtml() {
-  const browser = await launchChromium();
+  const htmlManager = new HtmlManager(db);
 
-  const htmlMap = await scrapWorldQuests(scrap.bind(null, browser));
-
-  try {
-    await browser.close();
-  } catch (e) {
-    Alerter.error("Failed to close browser", e);
-  }
-
-  return htmlMap;
+  return await htmlManager.get();
 }
 
 function htmlToList(htmlMap) {
