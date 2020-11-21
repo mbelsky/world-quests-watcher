@@ -1,0 +1,1 @@
+30 * * * * cd /opt/wqw && make scraper && make worker

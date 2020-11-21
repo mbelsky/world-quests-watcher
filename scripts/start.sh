@@ -1,7 +1,7 @@
 #! /bin/sh
 
-if [[ "$CRON" ]]; then
-  crond -f -d 8
+if [[ "$WORKER" ]]; then
+  node src/worker/worker.js
 else
   node src/di-bot/di-bot.js
 fi

@@ -24,7 +24,6 @@ COPY . .
 
 # To restore workspaces symlinks
 RUN yarn install --frozen-lockfile --production=true --ignore-optional && \
-    chmod -R 755 scripts src && \
-    cat crond/crontab >> /var/spool/cron/crontabs/root
+    chmod -R 755 scripts src
 
 CMD scripts/start.sh
